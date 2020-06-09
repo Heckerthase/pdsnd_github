@@ -210,8 +210,8 @@ def rawdata(df): #view raw data from csv file
     req = 'the'
     while True:
         try:
-            request = str(input('\nDo you want to view {} raw data from your selection? ("yes" or "no"):' .format(req)))
-            if request == 'yes':
+            request = input('\nDo you want to view {} raw data from your selection? ("yes" or "no"): ' .format(req))
+            if request.lower() == 'yes':
                 print(df[i:i+5])
                 i += 6
                 req = 'more'
@@ -235,7 +235,7 @@ def main():
         user_stats(df)
         rawdata(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? ("yes" or "no"): ')
         if restart.lower() != 'yes':
             break
 

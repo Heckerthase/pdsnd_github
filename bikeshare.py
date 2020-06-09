@@ -6,14 +6,7 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-'''
-city = 'new york city'
-month = 'march'
-day = 'monday'
-print(city.title())
-print(month.title())
-print(day.title())
-'''
+day.title())
 
 def get_filters():
 
@@ -232,15 +225,6 @@ def rawdata(df): #view raw data from csv file
 
 def main():
     while True:
-        '''
-        Default Data to skip manual filter selection while testing
-        city = 'new york city'
-        month = 'march'
-        day = 'monday'
-        print(city.title())
-        print(month.title())
-        print(day.title())
-        '''
 
         city, month, day = get_filters()
         df = load_data(city, month, day)
@@ -254,7 +238,6 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-
 
 if __name__ == "__main__":
 	main()

@@ -3,7 +3,7 @@
 - Project Due date: 2020-05-21
 - Status: passed (reviewed on: 2020-05-28)
 
-## General information to python project *bikeshare*
+## Information to python project *bikeshare*
  The Project was part of udacity course *Programming for Data Science Nanodegree Program*. The aim of the project was to explore rental data from a bike sharing company in an interactive way by using *Python*.
 
 ## Used Software
